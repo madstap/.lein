@@ -9,8 +9,8 @@
                   [jonase/eastwood "0.2.1"]
 
                   ;; See this: https://github.com/clojure-emacs/clj-refactor.el
-                  [refactor-nrepl "0.2.2"]
-
+                  [refactor-nrepl "1.2.0-SNAPSHOT"]
+                  [lein-midje "3.1.3"]
                   [lein-pprint "1.1.2"]
                   [com.jakemccrary/lein-test-refresh "0.5.5"]
                   [lein-autoexpect "1.4.2"]
