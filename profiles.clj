@@ -9,13 +9,12 @@
                   [jonase/eastwood "0.2.1"]
 
                   ;; See this: https://github.com/clojure-emacs/clj-refactor.el
-                  [refactor-nrepl "1.2.0-SNAPSHOT"]
+                  [refactor-nrepl "1.1.0"]
                   [lein-midje "3.1.3"]
                   [lein-pprint "1.1.2"]
                   [com.jakemccrary/lein-test-refresh "0.5.5"]
                   [lein-autoexpect "1.4.2"]
                   [lein-ancient "0.5.5"]]}}
-
 
 
 ;; Jake-something's  user profile.
@@ -25,15 +24,16 @@
         
         :injections [(require 'pjstadig.humane-test-output)
                      (pjstadig.humane-test-output/activate!)]
-        :plugins [[cider/cider-nrepl "0.8.2"]
-                  [refactor-nrepl "0.2.2"]
+        :plugins [[cider/cider-nrepl "0.9.1"]
+                  [refactor-nrepl "1.1.0"]
                   [com.jakemccrary/lein-test-refresh "0.5.5"]
                   [lein-autoexpect "1.4.2"]
                   [lein-ancient "0.5.5"]
                   [jonase/eastwood "0.2.1"]
                   [lein-kibit "0.0.8"]
                   [lein-pprint "1.1.2"]]
-        :test-refresh {:notify-command ["terminal-notifier" "-title" "Tests" "-message"]}}}
+        :test-refresh {:notify-command
+                       ["terminal-notifier" "-title" "Tests" "-message"]}}}
 
 #_ ;; A scarier profile.
 {:user 
